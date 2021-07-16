@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+td, th {
+    padding: 0 50px 7px;
+    border: solid 2px black;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    background-color: orange;
+}
+tbody tr {
+    background-color: rgb(0, 132, 255);
+}
+tbody tr.pair {
+    background-color: rgb(73, 167, 255)!important;
+}
+
