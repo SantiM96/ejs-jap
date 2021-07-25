@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Numero de enlaces que apuntan a http://prueba
     let aPrueba = [];
-    for (element of aWeb) if (element.href == 'http://prueba/') aPrueba.push(element);
+    for (element of aWeb) {
+        if (element.href == 'http://prueba/') aPrueba.push(element);
+    } 
 
     // Numero de enlaces del tercer párrafo
     let nAPThree = document.querySelectorAll('p')[2].querySelectorAll('a').length;
 
-
+    // Desplegar
     document.querySelector('body').innerHTML += `
         <h2>Contador</h2>
         <ul id="informacion">
@@ -23,5 +25,5 @@ document.addEventListener('DOMContentLoaded', function () {
             <li>Número de enlaces del tercer párrafo: ${nAPThree}</li>
         </ul>
     `;
-
+    
 })
